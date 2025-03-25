@@ -1,3 +1,4 @@
+// Create a web server that listens on port 3000 and returns the string "Hello, World!" for all requests.
 const http = require('http');
 
 const hostname = '127.0.0.1';
