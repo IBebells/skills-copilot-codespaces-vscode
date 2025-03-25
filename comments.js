@@ -1,1 +1,9 @@
-// Create a web server that listens on port 3000 and serves the following HTML file. The comments.js file should contain the JavaScript code that makes an AJAX request to the server at http://localhost:3000/comments and logs the response to the console.
+//Create web server
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const fs = require('fs');
+const path = require('path'); //path module
+const commentsPath = path.join(__dirname, 'comments.json'); //comments.json file path
+const comments = require('./comments.json'); //comments.json file
+const cors = require('cors'); //cors module
